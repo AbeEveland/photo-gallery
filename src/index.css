@@ -9,4 +9,99 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: rgb(70, 70, 77);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  color: rgb(234, 234, 241);
+}
+
+.linkPosition {
+  position: relative;
+  top: -99px;
+  right: 32px;
+  color: rgb(234, 234, 241);
+  font-family: cursive;
+}
+
+.secondLinkPosition {
+  position: relative;
+  top: -45px;
+  right: 32px;
+  color: rgb(234, 234, 241);
+  font-family: cursive;
+}
+li {
+  list-style-type: none;
+}
+.photoList {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  color: rgb(234, 234, 241);
+  flex-direction: column;
+  font-family: cursive;
+  position: relative;
+  left: 40%;
+  width: 300px;
+}
+
+h1 {
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  color: rgb(234, 234, 241);
+  position: relative;
+  left: 37%;
+  width: 400px;
+}
+.h2 {
+  color: rgb(234, 234, 241);
+}
+.Header {
+  color: rgb(234, 234, 241);
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+}
+
+.photoListTitles {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  color: rgb(234, 234, 241);
+  flex-direction: column;
+  font-family: cursive;
+  position: relative;
+  width: 130px;
+}
+p {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  color: rgb(153, 153, 172);
+}
+
+img {
+  border-radius: 0.3em;
+}
+
+.p {
+  border: thin;
+  border: solid;
+  color: rgb(234, 234, 241);
+  width: 400px;
+  position: relative;
+  left: 37%;
+  padding: 1em;
+}
+.titlea {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  color: rgb(234, 234, 241);
 }

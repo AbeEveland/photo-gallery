@@ -1,37 +1,30 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import Page from './pages/Page'
-import Page2 from './pages/Page2'
-import HomePage from './pages/HomePage'
-import NotFound from './pages/NotFound'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HomePage } from './components/HomePage'
+import { PhotoList } from './components/PhotoList'
+import { PhotoDetail } from './components/PhotoDetail'
+import { Header } from './components/Header'
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <header>
-          <h1>Welcome to my SPA</h1>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Go Home</Link>
-              </li>
-              <li>
-                <Link to="/1">Page 1</Link>
-              </li>
-              <li>
-                <Link to="/2">Page 2</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <Switch>
-          <Route exact path="/" component={HomePage}></Route>
-          <Route exact path="/1" component={Page}></Route>
-          <Route exact path="/2" component={Page2}></Route>
-          <Route path="*" component={NotFound}></Route>
-        </Switch>
-      </Router>
+      <body>
+        <Router>
+          <main>
+            <Header />
+            <section className="section">
+              <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/:categoryName" component={PhotoList} />
+                <Route
+                  path="/:categoryName/:arrayIndexOfThePhoto"
+                  component={PhotoDetail}
+                />
+              </Switch>
+            </section>
+          </main>
+        </Router>
+      </body>
     )
   }
 }
